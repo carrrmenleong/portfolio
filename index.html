@@ -6,14 +6,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Carmen's Portfolio</title>
   <link rel="stylesheet" href="css/style.css" />
+  <script src="script.js"></script>
+  <link rel="icon" type="image/png" href="images/logo.png">
+
+  <!-- Load an icon library to show a hamburger menu on small screens -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
+  <nav>
+    <div class="navbar" id="myTopNav">
+      <img src="images/logo.png" alt="">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#work">Work Experience</a>
+      <a href="#contact">Contact</a>
+      <a href="/link">Resume</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars fa-lg"></i></a>
+    </div>
+  </nav>
+
   <main>
     <!-- ***********************  ABOUT / PROFILE  *********************** -->
     <header>
-      <div class="contentWrap">
-        <h1>Carmen Leong</h1>
+      <div class="contentWrap" id="about">
+        <h1>Hi! I'm <br> Carmen Leong</h1>
         <h2>University Student</h2>
 
         <p>
@@ -27,15 +44,23 @@
     </header>
 
     <!-- ********************  PROJECTS / PORTFOLIO  ********************* -->
-    <section class="projects">
+    <section class="projects" id="projects">
       <div class="contentWrap divider">
         <h2>Featured Projects</h2>
-        <p>
-          View selected projects below. More information can be found at
-          <a href="https://carmen020824.wixsite.com/mysite">carmen020824.wixsite.com</a>.
-        </p>
 
         <!-- Copy the whole <section> block to add more projects. -->
+        <section class="projectItem">
+          <img src="images/numberloo.png" alt="numberloo app prototype" />
+          <h3>Numberloo App</h3>
+          <p>
+            A web application for math lover. Numberloo is a daily puzzle game which aims to test users' mathematic skills, as well as provide them with a source of entertainment
+            The game is short enough to keep users entertained, but also fairly challenging to give users a sense of achievement after every game. Created
+            using HTML, JavaScript, CSS, Bootstap, Python, Flask (Team Project of 4)
+          </p>
+          <a class="btn" href="https://github.com/codersforcauses/foodbank.git" target="_blank">View project code</a>
+          <a class="btn" href="https://numberloo.herokuapp.com/index" target="_blank">View website</a>
+        </section>
+
         <section class="projectItem">
           <img src="images/foodbank.png" alt="foodbank app prototype" />
           <h3>Foodbank App</h3>
@@ -43,10 +68,10 @@
             A web application for Foodbank to use on children to learn about
             healthy food, the app consist of food recipe that children can make
             and games for children to play and learn about healthy food. Created
-            using HTML, TypeScript, Tailwind, CSS, Next.js, React. Ongoing
-            development. (Team Project)
+            using HTML, TypeScript, Tailwind, CSS, Next.js, React. (Team Project of 20)
           </p>
           <a class="btn" href="https://github.com/codersforcauses/foodbank.git" target="_blank">View project code</a>
+          <a class="btn" href="https://foodbank.vercel.app/" target="_blank">View website</a>
         </section>
 
         <section class="projectItem">
@@ -58,7 +83,7 @@
             by Engineers Without Border (EWB) team to transport around the city.
             This app is used by the EWB team on the wheelchair users to track
             and analyse the performance data of the Accessible Moto. Created
-            using Dart and Flutter. (Team Project)
+            using Dart and Flutter. (Team Project of 3)
           </p>
           <a class="btn" href="https://github.com/carrrmenleong/ewb_monitoring" target="_blank">View project code</a>
         </section>
@@ -95,7 +120,7 @@
     </section>
 
     <!-- ***********************  WORK EXPERIENCE  *********************** -->
-    <section class="workExperience">
+    <section class="workExperience" id="work">
       <div class="contentWrap itemDetails divider">
         <h2>Work Experience</h2>
         <!-- <p>
@@ -143,7 +168,7 @@
     </section>
 
     <!-- ******************  EDUCATION & CERTIFICATIONS ****************** -->
-    <section class="education">
+    <section class="education" id="education">
       <div class="contentWrap itemDetails">
         <h2>Education</h2>
 
@@ -162,7 +187,7 @@
 
     <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
     <footer>
-      <div class="contentWrap">
+      <div class="contentWrap" id="contact">
         <h2>Let's Keep in Touch!</h2>
 
         <!-- Social media and contact links. Add or remove any networks. -->
@@ -175,9 +200,6 @@
           </li>
           <li>
             <a href="https://www.linkedin.com/in/carmenleongg/" target="_blank">LinkedIn</a>
-          </li>
-          <li>
-            <a href="https://www.facebook.com/carmen.leong.0824/" target="_blank">Facebook</a>
           </li>
         </ul>
       </div>

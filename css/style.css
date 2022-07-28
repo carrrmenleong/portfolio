@@ -6,6 +6,7 @@ Mint Cream: #F4FFF8
 Pewter Blue: #8BAAAD
 dark blue: #022b3a
 light blue: #bae6f3
+light gray: #e0e6e4
  */
 
 /* Font Styles
@@ -88,6 +89,32 @@ h3 {
 .divider > section:last-of-type {
   border-bottom: none;
 }
+/* Navbar
+----------------------------------------- */
+.navbar{
+  margin: auto;
+  display:flex;
+  justify-content: center;
+  padding: 25px 0px;
+  background: #e0e6e4;
+}
+.navbar img{
+  width:80px
+}
+
+.navbar a {
+  padding:5px 20px;
+  align-self:center;
+  color: #663366;
+}
+
+.navbar a:hover {
+  color: #1F191B;
+}
+
+.navbar .icon {
+  display: none;
+}
 
 /* Profile
 ----------------------------------------- */
@@ -108,10 +135,16 @@ header {
   padding: 8px;
   border-radius: 4px;
   display: inline-block;
+  transition: 0.3s;
+  margin-right: 10px;
+
 }
 
 .projects .btn:hover {
-  background: rgb(0, 15, 8, 0.5);
+  /* background: rgb(0, 15, 8, 0.5); */
+  background: #dcedee;
+  color: #1c3738;
+
 }
 
 .projectItem {
@@ -131,6 +164,7 @@ header {
 /* Education
 ----------------------------------------- */
 .education {
+  color: #1c3738;
   background-image: url(../images/bgpic.jpg);
   background-size: cover;
   background-position: top left;
@@ -184,5 +218,39 @@ footer {
   }
   .contactList a {
     padding: 5px;
+  }
+
+  /* Responsive Navbar */
+  .navbar img{
+    width: 50px;
+    display:block;
+    margin: auto;
+  }
+
+  .navbar a{
+    display: none;
+  }
+
+  .navbar a.icon {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 25px;
+  }
+
+  .navbar.responsive {position: relative;}
+  .navbar.responsive a.icon {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+  .navbar.responsive{
+    display:block;
+  }
+
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
   }
 }
