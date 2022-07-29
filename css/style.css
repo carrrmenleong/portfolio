@@ -155,6 +155,31 @@ header {
   margin-top: 0;
 }
 
+/* Skills
+----------------------------------------- */
+.skills {
+  background: #4d4847;
+}
+
+.skills img{
+  width:100px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+}
+
+.grid-item{
+  margin: auto;
+  margin-top:25px;
+  text-align: center;
+}
+
+.grid-item h3{
+  margin-top:10px;
+}
+
 /* Work Experience
 ----------------------------------------- */
 .workExperience {
