@@ -167,7 +167,8 @@ header {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 200px 200px 200px 200px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
 }
 
 .grid-item{
@@ -243,6 +244,11 @@ footer {
   }
   .contactList a {
     padding: 5px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   /* Responsive Navbar */
