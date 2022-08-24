@@ -184,7 +184,7 @@ header {
 /* Work Experience
 ----------------------------------------- */
 .workExperience {
-  background: #4d4847;
+  background: #8baaad;
 }
 
 /* Education
@@ -199,8 +199,8 @@ header {
 /* Contact Info
 ----------------------------------------- */
 footer {
-  color: #1c3738;
-  background: #8baaad;
+  /* color: #1c3738; */
+  background: #1c3738;
 }
 
 .contactList {
@@ -211,6 +211,11 @@ footer {
 .contactList a {
   padding: 15px;
   display: inline-block;
+  color: #f4fff8;
+}
+
+.contactList a:hover {
+  color: #c2e1e2;
 }
 
 /* Responsive
