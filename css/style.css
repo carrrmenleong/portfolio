@@ -91,25 +91,25 @@ h3 {
 }
 /* Navbar
 ----------------------------------------- */
-.navbar{
+.navbar {
   margin: auto;
-  display:flex;
+  display: flex;
   justify-content: center;
   padding: 25px 0px;
   background: #e0e6e4;
 }
-.navbar img{
-  width:80px
+.navbar img {
+  width: 80px;
 }
 
 .navbar a {
-  padding:5px 20px;
-  align-self:center;
+  padding: 5px 20px;
+  align-self: center;
   color: #663366;
 }
 
 .navbar a:hover {
-  color: #1F191B;
+  color: #1f191b;
 }
 
 .navbar .icon {
@@ -137,14 +137,12 @@ header {
   display: inline-block;
   transition: 0.3s;
   margin-right: 10px;
-
 }
 
 .projects .btn:hover {
   /* background: rgb(0, 15, 8, 0.5); */
   background: #dcedee;
   color: #1c3738;
-
 }
 
 .projectItem {
@@ -161,24 +159,47 @@ header {
   background: #4d4847;
 }
 
-.skills img{
-  width:100px;
+.skills img {
+  width: 50px;
 }
 
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   justify-content: center;
+  background-color: #1c3738;
+  border-radius: 0 0 5px 5px;
+  padding-bottom: 15px;
 }
 
-.grid-item{
+.grid-item {
   margin: auto;
-  margin-top:25px;
+  margin-top: 25px;
   text-align: center;
 }
 
-.grid-item h3{
-  margin-top:10px;
+.grid-item h3 {
+  margin-top: 10px;
+  font-size: 11px;
+}
+
+details summary {
+  cursor: pointer;
+  padding: 10px 10px 10px 20px;
+  background-color: #1c3738;
+  color: #f4fff8;
+  border-radius: 5px;
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+details summary:hover {
+  background-color: #022b3a;
+}
+
+details[open] summary {
+  border-bottom: 2px solid #8baaad;
+  border-radius: 5px 5px 0 0;
 }
 
 /* Work Experience
@@ -253,17 +274,21 @@ footer {
 
   .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .grid-item h3 {
+    font-size: 12px;
   }
 
   /* Responsive Navbar */
-  .navbar img{
+  .navbar img {
     width: 50px;
-    display:block;
+    display: block;
     margin: auto;
   }
 
-  .navbar a{
+  .navbar a {
     display: none;
   }
 
@@ -274,14 +299,16 @@ footer {
     top: 25px;
   }
 
-  .navbar.responsive {position: relative;}
+  .navbar.responsive {
+    position: relative;
+  }
   .navbar.responsive a.icon {
     position: absolute;
     right: 20px;
     top: 20px;
   }
-  .navbar.responsive{
-    display:block;
+  .navbar.responsive {
+    display: block;
   }
 
   .navbar.responsive a {
